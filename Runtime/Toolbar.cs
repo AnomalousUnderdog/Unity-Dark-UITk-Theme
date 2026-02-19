@@ -4,7 +4,8 @@ using UnityEngine.UIElements;
 
 namespace QuickEye.DarkTheme
 {
-    public class Toolbar : VisualElement
+    [UxmlElement]
+    public partial class Toolbar : VisualElement
     {
         private static readonly StyleSheet _ToolbarDarkStyleSheet;
         public static readonly string ussClassName = "unity-toolbar";
@@ -20,18 +21,14 @@ namespace QuickEye.DarkTheme
             SetToolbarStyleSheet(this);
         }
 
-
-        public new class UxmlFactory : UxmlFactory<Toolbar>
-        {
-        }
-
         public static void SetToolbarStyleSheet(VisualElement ve)
         {
             ve.styleSheets.Add(_ToolbarDarkStyleSheet);
         }
     }
 
-    public class ToolbarToggle : Toggle
+    [UxmlElement]
+    public partial class ToolbarToggle : Toggle
     {
         public new static readonly string ussClassName = "unity-toolbar-toggle";
 
@@ -43,17 +40,10 @@ namespace QuickEye.DarkTheme
             RemoveFromClassList(Toggle.ussClassName);
             AddToClassList(ussClassName);
         }
-
-        public new class UxmlFactory : UxmlFactory<ToolbarToggle, UxmlTraits>
-        {
-        }
-
-        public new class UxmlTraits : Toggle.UxmlTraits
-        {
-        }
     }
 
-    public class ToolbarButton : Button
+    [UxmlElement]
+    public partial class ToolbarButton : Button
     {
         public new static readonly string ussClassName = "unity-toolbar-button";
 
@@ -65,14 +55,6 @@ namespace QuickEye.DarkTheme
         }
 
         public ToolbarButton() : this(() => { })
-        {
-        }
-
-        public new class UxmlFactory : UxmlFactory<ToolbarButton, UxmlTraits>
-        {
-        }
-
-        public new class UxmlTraits : Button.UxmlTraits
         {
         }
     }
