@@ -1,7 +1,8 @@
 {
-    "name": "com.quickeye.dark-runtime-theme",
-    "displayName": "Unity Editor Dark Theme for Runtime",
-    "version": "1.0.0",
-    "author": "Quick Eye",
-    "type": "library"
-  }
+  "name": "com.dreamlordsdigital.uitoolkit.darktheme",
+  "version": "1.0.0",
+  "displayName": "DLD UI Toolkit Dark Theme",
+  "description": "UI Toolkit theme based on the Unity Editor dark skin. Based on https://github.com/ErnSur/Dark-Runtime-Theme",
+  "author": "Dreamlords Digital",
+  "type": "library"
+}

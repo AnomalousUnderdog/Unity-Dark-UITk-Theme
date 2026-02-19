@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace QuickEye.DarkTheme
+namespace DLD.UIToolkit.DarkTheme
 {
     [UxmlElement]
     public partial class Toolbar : VisualElement
@@ -12,7 +12,7 @@ namespace QuickEye.DarkTheme
 
         static Toolbar()
         {
-            _ToolbarDarkStyleSheet = Resources.Load<StyleSheet>("com.quickeye.dark-runtime-theme/Toolbar Dark");
+            _ToolbarDarkStyleSheet = Resources.Load<StyleSheet>("com.dreamlordsdigital.uitoolkit.darktheme/Toolbar Dark");
         }
 
         public Toolbar()
